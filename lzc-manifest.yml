@@ -1,4 +1,4 @@
-name: MyVueTorrent
+name: VueTorrent
 package: com.github.moonfruit.vuetorrent
 version: 2.5.1
 description: The sleekest looking WEBUI for qBittorrent made with Vuejs!
@@ -6,7 +6,7 @@ license: https://choosealicense.com/licenses/gpl-3.0/
 homepage: https://github.com/VueTorrent/vuetorrent-backend
 author: MoonFruit
 application:
-  subdomain: vt
+  subdomain: vuetorrent
   background_task: true
   multi_instance: true
   routes:

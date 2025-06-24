@@ -1,11 +1,13 @@
-vuetorrent.lpk: lzc-* scripts/*
-	lzc-cli project build -o vuetorrent.lpk
+all: app.lpk
+
+app.lpk: lzc-* scripts/*
+	lzc-cli project build -o app.lpk
 
 clean:
-	rm -f vuetorrent.lpk
+	rm -f app.lpk
 
-install: vuetorrent.lpk
-	lzc-cli app install vuetorrent.lpk
+install: app.lpk
+	lzc-cli app install app.lpk
 
 uninstall:
 	lzc-cli app uninstall `yq .package lzc-manifest.yml`
